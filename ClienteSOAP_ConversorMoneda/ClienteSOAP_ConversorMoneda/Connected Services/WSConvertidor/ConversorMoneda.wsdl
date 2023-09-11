@@ -1,0 +1,1000 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="MXN_USD">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="MXN" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MXN_USDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="MXN_USDResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MXN_COP">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="MXN" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MXN_COPResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="MXN_COPResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MXN_EUR">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="MXN" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MXN_EURResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="MXN_EURResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="USD_MXN">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="USD" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="USD_MXNResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="USD_MXNResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="USD_COP">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="USD" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="USD_COPResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="USD_COPResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="USD_EUR">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="USD" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="USD_EURResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="USD_EURResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="COP_MXN">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="COP" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="COP_MXNResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="COP_MXNResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="COP_USD">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="COP" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="COP_USDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="COP_USDResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="COP_EUR">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="COP" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="COP_EURResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="COP_EURResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EUR_MXN">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="EUR" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EUR_MXNResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="EUR_MXNResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EUR_USD">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="EUR" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EUR_USDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="EUR_USDResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EUR_COP">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="COP" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EUR_COPResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="EUR_COPResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="double" type="s:double" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="MXN_USDSoapIn">
+    <wsdl:part name="parameters" element="tns:MXN_USD" />
+  </wsdl:message>
+  <wsdl:message name="MXN_USDSoapOut">
+    <wsdl:part name="parameters" element="tns:MXN_USDResponse" />
+  </wsdl:message>
+  <wsdl:message name="MXN_COPSoapIn">
+    <wsdl:part name="parameters" element="tns:MXN_COP" />
+  </wsdl:message>
+  <wsdl:message name="MXN_COPSoapOut">
+    <wsdl:part name="parameters" element="tns:MXN_COPResponse" />
+  </wsdl:message>
+  <wsdl:message name="MXN_EURSoapIn">
+    <wsdl:part name="parameters" element="tns:MXN_EUR" />
+  </wsdl:message>
+  <wsdl:message name="MXN_EURSoapOut">
+    <wsdl:part name="parameters" element="tns:MXN_EURResponse" />
+  </wsdl:message>
+  <wsdl:message name="USD_MXNSoapIn">
+    <wsdl:part name="parameters" element="tns:USD_MXN" />
+  </wsdl:message>
+  <wsdl:message name="USD_MXNSoapOut">
+    <wsdl:part name="parameters" element="tns:USD_MXNResponse" />
+  </wsdl:message>
+  <wsdl:message name="USD_COPSoapIn">
+    <wsdl:part name="parameters" element="tns:USD_COP" />
+  </wsdl:message>
+  <wsdl:message name="USD_COPSoapOut">
+    <wsdl:part name="parameters" element="tns:USD_COPResponse" />
+  </wsdl:message>
+  <wsdl:message name="USD_EURSoapIn">
+    <wsdl:part name="parameters" element="tns:USD_EUR" />
+  </wsdl:message>
+  <wsdl:message name="USD_EURSoapOut">
+    <wsdl:part name="parameters" element="tns:USD_EURResponse" />
+  </wsdl:message>
+  <wsdl:message name="COP_MXNSoapIn">
+    <wsdl:part name="parameters" element="tns:COP_MXN" />
+  </wsdl:message>
+  <wsdl:message name="COP_MXNSoapOut">
+    <wsdl:part name="parameters" element="tns:COP_MXNResponse" />
+  </wsdl:message>
+  <wsdl:message name="COP_USDSoapIn">
+    <wsdl:part name="parameters" element="tns:COP_USD" />
+  </wsdl:message>
+  <wsdl:message name="COP_USDSoapOut">
+    <wsdl:part name="parameters" element="tns:COP_USDResponse" />
+  </wsdl:message>
+  <wsdl:message name="COP_EURSoapIn">
+    <wsdl:part name="parameters" element="tns:COP_EUR" />
+  </wsdl:message>
+  <wsdl:message name="COP_EURSoapOut">
+    <wsdl:part name="parameters" element="tns:COP_EURResponse" />
+  </wsdl:message>
+  <wsdl:message name="EUR_MXNSoapIn">
+    <wsdl:part name="parameters" element="tns:EUR_MXN" />
+  </wsdl:message>
+  <wsdl:message name="EUR_MXNSoapOut">
+    <wsdl:part name="parameters" element="tns:EUR_MXNResponse" />
+  </wsdl:message>
+  <wsdl:message name="EUR_USDSoapIn">
+    <wsdl:part name="parameters" element="tns:EUR_USD" />
+  </wsdl:message>
+  <wsdl:message name="EUR_USDSoapOut">
+    <wsdl:part name="parameters" element="tns:EUR_USDResponse" />
+  </wsdl:message>
+  <wsdl:message name="EUR_COPSoapIn">
+    <wsdl:part name="parameters" element="tns:EUR_COP" />
+  </wsdl:message>
+  <wsdl:message name="EUR_COPSoapOut">
+    <wsdl:part name="parameters" element="tns:EUR_COPResponse" />
+  </wsdl:message>
+  <wsdl:message name="MXN_USDHttpGetIn">
+    <wsdl:part name="MXN" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="MXN_USDHttpGetOut">
+    <wsdl:part name="Body" element="tns:double" />
+  </wsdl:message>
+  <wsdl:message name="MXN_COPHttpGetIn">
+    <wsdl:part name="MXN" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="MXN_COPHttpGetOut">
+    <wsdl:part name="Body" element="tns:double" />
+  </wsdl:message>
+  <wsdl:message name="MXN_EURHttpGetIn">
+    <wsdl:part name="MXN" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="MXN_EURHttpGetOut">
+    <wsdl:part name="Body" element="tns:double" />
+  </wsdl:message>
+  <wsdl:message name="USD_MXNHttpGetIn">
+    <wsdl:part name="USD" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="USD_MXNHttpGetOut">
+    <wsdl:part name="Body" element="tns:double" />
+  </wsdl:message>
+  <wsdl:message name="USD_COPHttpGetIn">
+    <wsdl:part name="USD" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="USD_COPHttpGetOut">
+    <wsdl:part name="Body" element="tns:double" />
+  </wsdl:message>
+  <wsdl:message name="USD_EURHttpGetIn">
+    <wsdl:part name="USD" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="USD_EURHttpGetOut">
+    <wsdl:part name="Body" element="tns:double" />
+  </wsdl:message>
+  <wsdl:message name="COP_MXNHttpGetIn">
+    <wsdl:part name="COP" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="COP_MXNHttpGetOut">
+    <wsdl:part name="Body" element="tns:double" />
+  </wsdl:message>
+  <wsdl:message name="COP_USDHttpGetIn">
+    <wsdl:part name="COP" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="COP_USDHttpGetOut">
+    <wsdl:part name="Body" element="tns:double" />
+  </wsdl:message>
+  <wsdl:message name="COP_EURHttpGetIn">
+    <wsdl:part name="COP" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="COP_EURHttpGetOut">
+    <wsdl:part name="Body" element="tns:double" />
+  </wsdl:message>
+  <wsdl:message name="EUR_MXNHttpGetIn">
+    <wsdl:part name="EUR" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="EUR_MXNHttpGetOut">
+    <wsdl:part name="Body" element="tns:double" />
+  </wsdl:message>
+  <wsdl:message name="EUR_USDHttpGetIn">
+    <wsdl:part name="EUR" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="EUR_USDHttpGetOut">
+    <wsdl:part name="Body" element="tns:double" />
+  </wsdl:message>
+  <wsdl:message name="EUR_COPHttpGetIn">
+    <wsdl:part name="COP" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="EUR_COPHttpGetOut">
+    <wsdl:part name="Body" element="tns:double" />
+  </wsdl:message>
+  <wsdl:message name="MXN_USDHttpPostIn">
+    <wsdl:part name="MXN" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="MXN_USDHttpPostOut">
+    <wsdl:part name="Body" element="tns:double" />
+  </wsdl:message>
+  <wsdl:message name="MXN_COPHttpPostIn">
+    <wsdl:part name="MXN" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="MXN_COPHttpPostOut">
+    <wsdl:part name="Body" element="tns:double" />
+  </wsdl:message>
+  <wsdl:message name="MXN_EURHttpPostIn">
+    <wsdl:part name="MXN" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="MXN_EURHttpPostOut">
+    <wsdl:part name="Body" element="tns:double" />
+  </wsdl:message>
+  <wsdl:message name="USD_MXNHttpPostIn">
+    <wsdl:part name="USD" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="USD_MXNHttpPostOut">
+    <wsdl:part name="Body" element="tns:double" />
+  </wsdl:message>
+  <wsdl:message name="USD_COPHttpPostIn">
+    <wsdl:part name="USD" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="USD_COPHttpPostOut">
+    <wsdl:part name="Body" element="tns:double" />
+  </wsdl:message>
+  <wsdl:message name="USD_EURHttpPostIn">
+    <wsdl:part name="USD" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="USD_EURHttpPostOut">
+    <wsdl:part name="Body" element="tns:double" />
+  </wsdl:message>
+  <wsdl:message name="COP_MXNHttpPostIn">
+    <wsdl:part name="COP" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="COP_MXNHttpPostOut">
+    <wsdl:part name="Body" element="tns:double" />
+  </wsdl:message>
+  <wsdl:message name="COP_USDHttpPostIn">
+    <wsdl:part name="COP" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="COP_USDHttpPostOut">
+    <wsdl:part name="Body" element="tns:double" />
+  </wsdl:message>
+  <wsdl:message name="COP_EURHttpPostIn">
+    <wsdl:part name="COP" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="COP_EURHttpPostOut">
+    <wsdl:part name="Body" element="tns:double" />
+  </wsdl:message>
+  <wsdl:message name="EUR_MXNHttpPostIn">
+    <wsdl:part name="EUR" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="EUR_MXNHttpPostOut">
+    <wsdl:part name="Body" element="tns:double" />
+  </wsdl:message>
+  <wsdl:message name="EUR_USDHttpPostIn">
+    <wsdl:part name="EUR" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="EUR_USDHttpPostOut">
+    <wsdl:part name="Body" element="tns:double" />
+  </wsdl:message>
+  <wsdl:message name="EUR_COPHttpPostIn">
+    <wsdl:part name="COP" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="EUR_COPHttpPostOut">
+    <wsdl:part name="Body" element="tns:double" />
+  </wsdl:message>
+  <wsdl:portType name="ConversorMonedaSoap">
+    <wsdl:operation name="MXN_USD">
+      <wsdl:input message="tns:MXN_USDSoapIn" />
+      <wsdl:output message="tns:MXN_USDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MXN_COP">
+      <wsdl:input message="tns:MXN_COPSoapIn" />
+      <wsdl:output message="tns:MXN_COPSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MXN_EUR">
+      <wsdl:input message="tns:MXN_EURSoapIn" />
+      <wsdl:output message="tns:MXN_EURSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="USD_MXN">
+      <wsdl:input message="tns:USD_MXNSoapIn" />
+      <wsdl:output message="tns:USD_MXNSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="USD_COP">
+      <wsdl:input message="tns:USD_COPSoapIn" />
+      <wsdl:output message="tns:USD_COPSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="USD_EUR">
+      <wsdl:input message="tns:USD_EURSoapIn" />
+      <wsdl:output message="tns:USD_EURSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="COP_MXN">
+      <wsdl:input message="tns:COP_MXNSoapIn" />
+      <wsdl:output message="tns:COP_MXNSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="COP_USD">
+      <wsdl:input message="tns:COP_USDSoapIn" />
+      <wsdl:output message="tns:COP_USDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="COP_EUR">
+      <wsdl:input message="tns:COP_EURSoapIn" />
+      <wsdl:output message="tns:COP_EURSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EUR_MXN">
+      <wsdl:input message="tns:EUR_MXNSoapIn" />
+      <wsdl:output message="tns:EUR_MXNSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EUR_USD">
+      <wsdl:input message="tns:EUR_USDSoapIn" />
+      <wsdl:output message="tns:EUR_USDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EUR_COP">
+      <wsdl:input message="tns:EUR_COPSoapIn" />
+      <wsdl:output message="tns:EUR_COPSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ConversorMonedaHttpGet">
+    <wsdl:operation name="MXN_USD">
+      <wsdl:input message="tns:MXN_USDHttpGetIn" />
+      <wsdl:output message="tns:MXN_USDHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MXN_COP">
+      <wsdl:input message="tns:MXN_COPHttpGetIn" />
+      <wsdl:output message="tns:MXN_COPHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MXN_EUR">
+      <wsdl:input message="tns:MXN_EURHttpGetIn" />
+      <wsdl:output message="tns:MXN_EURHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="USD_MXN">
+      <wsdl:input message="tns:USD_MXNHttpGetIn" />
+      <wsdl:output message="tns:USD_MXNHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="USD_COP">
+      <wsdl:input message="tns:USD_COPHttpGetIn" />
+      <wsdl:output message="tns:USD_COPHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="USD_EUR">
+      <wsdl:input message="tns:USD_EURHttpGetIn" />
+      <wsdl:output message="tns:USD_EURHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="COP_MXN">
+      <wsdl:input message="tns:COP_MXNHttpGetIn" />
+      <wsdl:output message="tns:COP_MXNHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="COP_USD">
+      <wsdl:input message="tns:COP_USDHttpGetIn" />
+      <wsdl:output message="tns:COP_USDHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="COP_EUR">
+      <wsdl:input message="tns:COP_EURHttpGetIn" />
+      <wsdl:output message="tns:COP_EURHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EUR_MXN">
+      <wsdl:input message="tns:EUR_MXNHttpGetIn" />
+      <wsdl:output message="tns:EUR_MXNHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EUR_USD">
+      <wsdl:input message="tns:EUR_USDHttpGetIn" />
+      <wsdl:output message="tns:EUR_USDHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EUR_COP">
+      <wsdl:input message="tns:EUR_COPHttpGetIn" />
+      <wsdl:output message="tns:EUR_COPHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ConversorMonedaHttpPost">
+    <wsdl:operation name="MXN_USD">
+      <wsdl:input message="tns:MXN_USDHttpPostIn" />
+      <wsdl:output message="tns:MXN_USDHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MXN_COP">
+      <wsdl:input message="tns:MXN_COPHttpPostIn" />
+      <wsdl:output message="tns:MXN_COPHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MXN_EUR">
+      <wsdl:input message="tns:MXN_EURHttpPostIn" />
+      <wsdl:output message="tns:MXN_EURHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="USD_MXN">
+      <wsdl:input message="tns:USD_MXNHttpPostIn" />
+      <wsdl:output message="tns:USD_MXNHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="USD_COP">
+      <wsdl:input message="tns:USD_COPHttpPostIn" />
+      <wsdl:output message="tns:USD_COPHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="USD_EUR">
+      <wsdl:input message="tns:USD_EURHttpPostIn" />
+      <wsdl:output message="tns:USD_EURHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="COP_MXN">
+      <wsdl:input message="tns:COP_MXNHttpPostIn" />
+      <wsdl:output message="tns:COP_MXNHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="COP_USD">
+      <wsdl:input message="tns:COP_USDHttpPostIn" />
+      <wsdl:output message="tns:COP_USDHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="COP_EUR">
+      <wsdl:input message="tns:COP_EURHttpPostIn" />
+      <wsdl:output message="tns:COP_EURHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EUR_MXN">
+      <wsdl:input message="tns:EUR_MXNHttpPostIn" />
+      <wsdl:output message="tns:EUR_MXNHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EUR_USD">
+      <wsdl:input message="tns:EUR_USDHttpPostIn" />
+      <wsdl:output message="tns:EUR_USDHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EUR_COP">
+      <wsdl:input message="tns:EUR_COPHttpPostIn" />
+      <wsdl:output message="tns:EUR_COPHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ConversorMonedaSoap" type="tns:ConversorMonedaSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="MXN_USD">
+      <soap:operation soapAction="http://tempuri.org/MXN_USD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MXN_COP">
+      <soap:operation soapAction="http://tempuri.org/MXN_COP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MXN_EUR">
+      <soap:operation soapAction="http://tempuri.org/MXN_EUR" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="USD_MXN">
+      <soap:operation soapAction="http://tempuri.org/USD_MXN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="USD_COP">
+      <soap:operation soapAction="http://tempuri.org/USD_COP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="USD_EUR">
+      <soap:operation soapAction="http://tempuri.org/USD_EUR" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="COP_MXN">
+      <soap:operation soapAction="http://tempuri.org/COP_MXN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="COP_USD">
+      <soap:operation soapAction="http://tempuri.org/COP_USD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="COP_EUR">
+      <soap:operation soapAction="http://tempuri.org/COP_EUR" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EUR_MXN">
+      <soap:operation soapAction="http://tempuri.org/EUR_MXN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EUR_USD">
+      <soap:operation soapAction="http://tempuri.org/EUR_USD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EUR_COP">
+      <soap:operation soapAction="http://tempuri.org/EUR_COP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ConversorMonedaSoap12" type="tns:ConversorMonedaSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="MXN_USD">
+      <soap12:operation soapAction="http://tempuri.org/MXN_USD" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MXN_COP">
+      <soap12:operation soapAction="http://tempuri.org/MXN_COP" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MXN_EUR">
+      <soap12:operation soapAction="http://tempuri.org/MXN_EUR" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="USD_MXN">
+      <soap12:operation soapAction="http://tempuri.org/USD_MXN" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="USD_COP">
+      <soap12:operation soapAction="http://tempuri.org/USD_COP" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="USD_EUR">
+      <soap12:operation soapAction="http://tempuri.org/USD_EUR" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="COP_MXN">
+      <soap12:operation soapAction="http://tempuri.org/COP_MXN" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="COP_USD">
+      <soap12:operation soapAction="http://tempuri.org/COP_USD" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="COP_EUR">
+      <soap12:operation soapAction="http://tempuri.org/COP_EUR" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EUR_MXN">
+      <soap12:operation soapAction="http://tempuri.org/EUR_MXN" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EUR_USD">
+      <soap12:operation soapAction="http://tempuri.org/EUR_USD" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EUR_COP">
+      <soap12:operation soapAction="http://tempuri.org/EUR_COP" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ConversorMonedaHttpGet" type="tns:ConversorMonedaHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="MXN_USD">
+      <http:operation location="/MXN_USD" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MXN_COP">
+      <http:operation location="/MXN_COP" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MXN_EUR">
+      <http:operation location="/MXN_EUR" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="USD_MXN">
+      <http:operation location="/USD_MXN" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="USD_COP">
+      <http:operation location="/USD_COP" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="USD_EUR">
+      <http:operation location="/USD_EUR" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="COP_MXN">
+      <http:operation location="/COP_MXN" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="COP_USD">
+      <http:operation location="/COP_USD" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="COP_EUR">
+      <http:operation location="/COP_EUR" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EUR_MXN">
+      <http:operation location="/EUR_MXN" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EUR_USD">
+      <http:operation location="/EUR_USD" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EUR_COP">
+      <http:operation location="/EUR_COP" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ConversorMonedaHttpPost" type="tns:ConversorMonedaHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="MXN_USD">
+      <http:operation location="/MXN_USD" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MXN_COP">
+      <http:operation location="/MXN_COP" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MXN_EUR">
+      <http:operation location="/MXN_EUR" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="USD_MXN">
+      <http:operation location="/USD_MXN" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="USD_COP">
+      <http:operation location="/USD_COP" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="USD_EUR">
+      <http:operation location="/USD_EUR" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="COP_MXN">
+      <http:operation location="/COP_MXN" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="COP_USD">
+      <http:operation location="/COP_USD" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="COP_EUR">
+      <http:operation location="/COP_EUR" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EUR_MXN">
+      <http:operation location="/EUR_MXN" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EUR_USD">
+      <http:operation location="/EUR_USD" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EUR_COP">
+      <http:operation location="/EUR_COP" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ConversorMoneda">
+    <wsdl:port name="ConversorMonedaSoap" binding="tns:ConversorMonedaSoap">
+      <soap:address location="http://www.nitram.somee.com/Conversor/ConversorMoneda.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ConversorMonedaSoap12" binding="tns:ConversorMonedaSoap12">
+      <soap12:address location="http://www.nitram.somee.com/Conversor/ConversorMoneda.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ConversorMonedaHttpGet" binding="tns:ConversorMonedaHttpGet">
+      <http:address location="http://www.nitram.somee.com/Conversor/ConversorMoneda.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ConversorMonedaHttpPost" binding="tns:ConversorMonedaHttpPost">
+      <http:address location="http://www.nitram.somee.com/Conversor/ConversorMoneda.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

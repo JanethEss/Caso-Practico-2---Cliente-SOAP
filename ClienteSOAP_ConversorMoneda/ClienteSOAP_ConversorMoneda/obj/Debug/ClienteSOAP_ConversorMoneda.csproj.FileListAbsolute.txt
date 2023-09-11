@@ -1,0 +1,14 @@
+C:\Users\Janeth\source\repos\ClienteSOAP_ConversorMoneda\ClienteSOAP_ConversorMoneda\obj\Debug\ClienteSOAP_ConversorMoneda.csprojAssemblyReference.cache
+C:\Users\Janeth\source\repos\ClienteSOAP_ConversorMoneda\ClienteSOAP_ConversorMoneda\obj\Debug\ClienteSOAP_ConversorMoneda.Form1.resources
+C:\Users\Janeth\source\repos\ClienteSOAP_ConversorMoneda\ClienteSOAP_ConversorMoneda\obj\Debug\ClienteSOAP_ConversorMoneda.Properties.Resources.resources
+C:\Users\Janeth\source\repos\ClienteSOAP_ConversorMoneda\ClienteSOAP_ConversorMoneda\obj\Debug\ClienteSOAP_ConversorMoneda.csproj.GenerateResource.cache
+C:\Users\Janeth\source\repos\ClienteSOAP_ConversorMoneda\ClienteSOAP_ConversorMoneda\obj\Debug\ClienteSOAP_ConversorMoneda.csproj.CoreCompileInputs.cache
+C:\Users\Janeth\source\repos\ClienteSOAP_ConversorMoneda\ClienteSOAP_ConversorMoneda\bin\Debug\ClienteSOAP_ConversorMoneda.exe.config
+C:\Users\Janeth\source\repos\ClienteSOAP_ConversorMoneda\ClienteSOAP_ConversorMoneda\bin\Debug\ClienteSOAP_ConversorMoneda.exe
+C:\Users\Janeth\source\repos\ClienteSOAP_ConversorMoneda\ClienteSOAP_ConversorMoneda\bin\Debug\ClienteSOAP_ConversorMoneda.pdb
+C:\Users\Janeth\source\repos\ClienteSOAP_ConversorMoneda\ClienteSOAP_ConversorMoneda\obj\Debug\ClienteSOAP_ConversorMoneda.exe
+C:\Users\Janeth\source\repos\ClienteSOAP_ConversorMoneda\ClienteSOAP_ConversorMoneda\obj\Debug\ClienteSOAP_ConversorMoneda.pdb
+C:\Users\Janeth\source\repos\ClienteSOAP_ConversorMoneda\ClienteSOAP_ConversorMoneda\obj\Debug\ClienteSOAP_ConversorMoneda.ConvertirMXNa.resources
+C:\Users\Janeth\source\repos\ClienteSOAP_ConversorMoneda\ClienteSOAP_ConversorMoneda\obj\Debug\ClienteSOAP_ConversorMoneda.ConvertirCOPa.resources
+C:\Users\Janeth\source\repos\ClienteSOAP_ConversorMoneda\ClienteSOAP_ConversorMoneda\obj\Debug\ClienteSOAP_ConversorMoneda.ConvertirEURa.resources
+C:\Users\Janeth\source\repos\ClienteSOAP_ConversorMoneda\ClienteSOAP_ConversorMoneda\obj\Debug\ClienteSOAP_ConversorMoneda.ConvertirUSDa.resources
